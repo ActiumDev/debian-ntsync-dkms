@@ -1,0 +1,13 @@
+#!/bin/sh -e
+
+DKMS_NAME="ntsync"
+DKMS_VERSION="6.14-rc1+fa2e558"
+
+case "$1" in
+configure)
+	dkms add -m $DKMS_NAME -v $DKMS_VERSION
+	dkms build -m $DKMS_NAME -v $DKMS_VERSION
+	dkms install -m $DKMS_NAME -v $DKMS_VERSION
+	modprobe ntsync
+	;;
+esac

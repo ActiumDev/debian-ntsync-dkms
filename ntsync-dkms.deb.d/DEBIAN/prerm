@@ -1,0 +1,11 @@
+#!/bin/sh -e
+
+DKMS_NAME="ntsync"
+DKMS_VERSION="6.14-rc1+fa2e558"
+
+case "$1" in
+remove|upgrade|deconfigure)
+	modprobe -r ntsync || true
+	dkms remove -m $DKMS_NAME -v $DKMS_VERSION --all || true
+	;;
+esac

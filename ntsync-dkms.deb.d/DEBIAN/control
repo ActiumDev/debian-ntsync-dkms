@@ -1,0 +1,15 @@
+Package: ntsync-dkms
+Version: 6.14-rc1+fa2e558
+Architecture: all
+Maintainer: Actium <ActiumDev@users.noreply.github.com>
+Installed-Size: 100
+Section: kernel
+Priority: optional
+Depends: dkms, linux-libc-dev
+Conflicts: linux-libc-dev (>= 6.14)
+Homepage: https://github.com/ActiumDev/debian-ntsync-dkms
+Description: Kernel driver for NT synchronization primitives
+ The ntsync module provides kernel support for emulation of Windows NT
+ synchronization primitives. It is not a hardware driver.
+ .
+ This package automatically builds and install the ntsync module via DKMS.
