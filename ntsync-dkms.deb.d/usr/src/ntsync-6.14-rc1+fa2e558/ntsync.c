@@ -19,7 +19,7 @@
 #include <linux/sched/signal.h>
 #include <linux/slab.h>
 #include <linux/spinlock.h>
-#include <uapi/linux/ntsync.h>
+#include "ntsync.h"
 
 #define NTSYNC_NAME	"ntsync"
 

@@ -1,5 +1,4 @@
 obj-m := ntsync.o
-ccflags-y := -I$(PWD)/include
 
 KVER ?= $(shell uname -r)
 KDIR ?= /lib/modules/$(KVER)/build
