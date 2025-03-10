@@ -1,5 +1,5 @@
 Package: ntsync-dkms
-Version: 6.14-rc1+fa2e558
+Version: 6.14-rc6
 Architecture: all
 Maintainer: Actium <ActiumDev@users.noreply.github.com>
 Installed-Size: 100
